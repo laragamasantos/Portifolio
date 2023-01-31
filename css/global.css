@@ -1,0 +1,88 @@
+/* https://dribbble.com/shots/16673761-Modern-Logic/attachments/11711204?mode=media */
+
+* {
+    box-sizing: border-box; /* comportamento em forma de caixinhas, importante para margin e padding */
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('/assets/fonts/neue-machina-regular.otf');
+}
+
+body{
+    background-color: #031f3d;
+    color: #fff;
+}
+
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.main{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.main::before{
+    content: '';
+    background-image: url('/assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120vw;
+    height: 80vh;
+    z-index: -1;
+    filter: invert(53%) sepia(33%) saturate(6873%) hue-rotate(171deg) brightness(96%) contrast(88%);
+}
+
+.main::after{
+    content: '';
+    background-image: url('/assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 140vh;
+    z-index: -1;
+    filter: invert(53%) sepia(33%) saturate(6873%) hue-rotate(171deg) brightness(96%) contrast(88%);
+    transform: rotate(180deg);
+}
+
+
+@media only screen and (min-width: 768px) {  
+    .main{
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+
+    .main::before{
+        width: 70vw;
+    }
+
+    .main::after{
+        width: 70vw;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {  
+    .main{
+        max-width: 1024px;
+        margin: 1rem 10rem 1rem 10rem;
+    }
+
+  }

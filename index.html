@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Lara</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap" rel="stylesheet">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- import css files -->
+    <link rel="stylesheet" href="\assets\css\header.css" >
+    <link rel="stylesheet" href="\assets\css\global.css" >
+    <link rel="stylesheet" href="\assets\css\acordeon.css" >
+    <link rel="stylesheet" href="\assets\css\links.css" >
+
+</head>
+
+<body>
+    <div class="main">
+
+        <header class="header">
+            <img src="\assets\img\foto.jpeg" alt="Foto da Lara" class="photo">
+
+            <div class="text">
+                <h1 class="title">Olá! <br> Eu sou a Lara Gama</h1>
+
+                <div class="information">
+                    <p class="job"> Estudante de Engenharia de <br> Computação no CEFET-MG</p>
+                    <p class="location"> Belo Horizonte - BR</p>
+                    <p class="email">
+                        <a href="mailto:laragamasantos@gmail.com"> laragamasantos@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <section class="acordeon open">
+            <button class="trigger" type="button"> 
+                Skills 
+            </button>
+
+            <div class="content">
+                <p>Descrição quem sou</p>
+            </div>
+        </section>
+
+        <section class="acordeon open">
+            <button class="trigger" type="button"> 
+                Links 
+            </button>
+
+            <div class="content">
+                <ul class="links">
+                    <li>
+                        <span class="title github">Github</span>
+                        <a href="https://github.com/laragamasantos" target="_blank">github.com/laragamasantos</a>
+                    </li>
+                    <li>
+                        <span class="title linkedin">Linkedin</span>
+                        <a href="https://www.linkedin.com/in/lara-gama-santos-23b98b209/" target="_blank">linkedin.com/in/lara-gama-santos-23b98b209</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- import js files -->
+    <script src="/assets/js/acordeon.js"></script>
+</body>
+
+</html>
